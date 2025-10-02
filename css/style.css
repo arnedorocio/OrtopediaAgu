@@ -37,6 +37,7 @@ body {
     color: #d96a4d;
     text-decoration: none;
     text-align: center;
+    font-weight: bold;
     text-transform: uppercase;
     font-size: 2rem;
     margin-bottom: 15px;
@@ -215,8 +216,8 @@ li {
     text-decoration: none;
     font-size: 1.2rem;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: bolder;
     background-color: #d96a4d;
+    border-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
