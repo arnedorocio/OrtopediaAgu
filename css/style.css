@@ -5,9 +5,12 @@
     box-sizing: border-box;
     max-width: 100%;
     max-height: 100%;
+    /*overflow-x: hidden;*/
 }
 
-
+body {
+    overflow-x: hidden;
+}
 
 header {
     background-color: #f5f0e6;
@@ -19,7 +22,6 @@ header {
     "subtitulo carrito"
     ". barra";
     align-items: center;
-    padding: 10px;
 }
 
 #tituloPrincipal {
@@ -38,12 +40,12 @@ header {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 2rem;
-    margin-top: 5px;
+    /*margin-top: 5px;*/
     margin-bottom: 15px;
 }
 
 main {
-    background-color: #f5f0e6;
+    background-image: linear-gradient(to right, #654321, #f5f0e6, #654321) ;
 }
 
 .iconos{
@@ -103,6 +105,8 @@ footer {
     color: #654321;
     text-align: center;
     font-size: 1.5rem;
+    /*margin-top: 10px;*/
+    background-color: #f5f0e6;
 }
 
 .precio {
@@ -209,7 +213,7 @@ li {
     justify-content: center;
     margin-bottom: 50px;
 }
-.comprar{
+.comprar {
     color:black;
     text-decoration: none;
     font-size: 1.2rem;
@@ -221,15 +225,17 @@ li {
     align-items: center;
     margin-left: 180px;
     margin-bottom: 10px;
+    border-radius: 10px;
+    cursor: pointer;
     width: 200px;  
     height: 50px;
 }
-
 article {
     border: solid 3px rgb(101, 67, 33);
-    border-radius: 2px;;
+    border-radius: 5px;
     margin: 10px;
     width: 30%;
+    background-color: white;
 }
 
 .formulario{
@@ -245,6 +251,11 @@ article {
     font-size: 1rem;
     text-align: center;
     padding-bottom: 50px;
+}
+
+.inputFormulario {
+    background-color: rgb(179, 175, 175);
+    width: 400px;
 }
 
 .textoCasillero{
@@ -270,10 +281,6 @@ article {
     padding: 0 10px;
 }
 
-.video {
-    padding-bottom: 40px;
-}
-
 #mensaje {
     width: 400px;
     height: 400px;
@@ -289,9 +296,6 @@ article {
     justify-items: center;
 }
 
-.formularioClass {
-    background-color: white;
-}
 
 .envianosTuConsulta {
     text-align: center;
@@ -431,5 +435,16 @@ article {
 
     .carritoVacio .comprar {
         margin-left: 40px;
+    }
+
+    .inputFormulario {
+        background-color: rgb(179, 175, 175);
+        width: 200px;
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }

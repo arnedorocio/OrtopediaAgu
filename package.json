@@ -1,0 +1,19 @@
+{
+  "name": "s",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arnedorocio/OrtopediaAgu.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arnedorocio/OrtopediaAgu/issues"
+  },
+  "homepage": "https://github.com/arnedorocio/OrtopediaAgu#readme"
+}
