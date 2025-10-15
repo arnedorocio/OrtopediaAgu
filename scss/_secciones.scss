@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #f5f0e6;
+    display: grid;
+    grid-template-columns: (2, 1fr);
+    grid-template-rows: (3, 1fr);
+    grid-template-areas: 
+    "titulo carrito"
+    "subtitulo carrito"
+    ". barra";
+    align-items: center;
+}
+
+main {
+    background-image: nth($colores-bg, 3);
+}
+
+footer { 
+    background-color:nth($colores-fuentes, 1);
+}
+
+.padreFooter {
+    margin: 10px;
+    display: flex;          
+    @include flex(column, space-around, null, wrap, null);        
+    gap: 15px;
+}
+
+.barraNavegacion {
+    @include flex(row, flex-end, null, null, null);
+    grid-area: barra;
+}
+
+li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.carrusel {
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    @include flex(row, center, null, null, center);
+}
+
+.contenedorFormulario {  
+    @include flex (row,center,null,null,center);
+}
+
+.formulario {
+    @include flex (column,null,null,baseline,null);
+}

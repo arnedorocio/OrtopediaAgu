@@ -1,0 +1,84 @@
+@include responsive(768px) {
+    header {
+        @include flex(column, null, center, null, center);
+    }
+
+    #tituloPrincipal {
+        font-size: 2.5rem;
+    }
+
+    .barraNavegacion {
+        @include flex(column, center, center, null, null);
+        margin: 0 auto;
+        gap: 10px;
+    }
+
+    .carrito {  
+        margin: 10px 0;        
+    }
+
+    .imgProductos img {
+        width: 250px;
+        height: 250px;
+        margin: 30px;
+        justify-content: center;
+    }
+
+    .comprar {
+        margin: 10px auto;
+        width: 80%;
+    }
+
+    article {
+        width: 80%;
+    }
+
+    .carrusel {
+        @include flex(null, center, null, wrap, center);
+        img {
+            display: flex;
+            justify-content: center;
+            width: 100%; 
+            height: auto;
+        }
+    }
+
+     #mensaje {
+        width: 200px;
+        height: 200px;
+        margin: 2.5px;
+    }
+
+    .carritoVacio {
+        margin-left: 40px;
+        img {
+            width: 25%;
+            height: auto;
+            display: flex;
+            margin-bottom: 50px;
+        }
+        p {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 2rem;
+            margin-bottom: 50px;
+            color: red;
+            text-align: center; 
+        }
+    }
+
+    .comprar {
+        margin-left: 40px;
+    }
+
+    .inputFormulario {
+        background-color: rgb(179, 175, 175);
+        width: 200px;
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
