@@ -23,10 +23,12 @@ header {
 }
 
 main {
+    margin-bottom: 0px;
     background-image: nth($colores-bg, 3);
 }
 
 footer { 
+    margin-top: 0px;
     background-color:nth($colores-fuentes, 1);
 }
 

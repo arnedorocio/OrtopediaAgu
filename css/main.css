@@ -103,7 +103,7 @@ a {
 }
 
 .textoCasillero {
-  color: linear-gradient(to right, #654321, #f5f0e6, #654321);
+  color: #654321;
   margin-right: 10px;
 }
 
@@ -293,10 +293,12 @@ header {
 }
 
 main {
+  margin-bottom: 0px;
   background-image: linear-gradient(to right, #654321, #f5f0e6, #654321);
 }
 
 footer {
+  margin-top: 0px;
   background-color: #d96a4d;
 }
 
