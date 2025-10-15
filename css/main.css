@@ -400,6 +400,7 @@ li {
   }
   .carritoVacio {
     margin-left: 0px;
+    margin-right: 5px;
   }
   .carritoVacio img {
     width: 25%;
