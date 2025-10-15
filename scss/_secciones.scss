@@ -1,3 +1,7 @@
+@use "variables";
+@use "mixins";
+@use "sass:list";
+
 *{
     margin: 0;
     padding: 0;
@@ -24,23 +28,23 @@ header {
 
 main {
     margin-bottom: 0px;
-    background-image: nth($colores-bg, 3);
+    background-image: list.nth(variables.$colores-bg, 3);
 }
 
 footer { 
     margin-top: 0px;
-    background-color:nth($colores-fuentes, 1);
+    background-color: list.nth(variables.$colores-fuentes, 1);
 }
 
 .padreFooter {
     margin: 10px;
     display: flex;          
-    @include flex(column, space-around, null, wrap, null);        
+    @include mixins.flex(column, space-around, null, wrap, null);        
     gap: 15px;
 }
 
 .barraNavegacion {
-    @include flex(row, flex-end, null, null, null);
+    @include mixins.flex(row, flex-end, null, null, null);
     grid-area: barra;
 }
 
@@ -53,13 +57,13 @@ li {
     display: flex;
     padding-top: 50px;
     padding-bottom: 50px;
-    @include flex(row, center, null, null, center);
+    @include mixins.flex(row, center, null, null, center);
 }
 
 .contenedorFormulario {  
-    @include flex (row,center,null,null,center);
+    @include mixins.flex(row,center,null,null,center);
 }
 
 .formulario {
-    @include flex (column,null,null,baseline,null);
+    @include mixins.flex(column,null,null,baseline,null);
 }

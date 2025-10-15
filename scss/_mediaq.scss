@@ -1,6 +1,8 @@
-@include responsive(768px) {
+@use "mixins";
+
+@include mixins.responsive(768px) {
     header {
-        @include flex(column, null, center, null, center);
+        @include mixins.flex(column, null, center, null, center);
     }
 
     #tituloPrincipal {
@@ -8,10 +10,10 @@
     }
 
     .barraNavegacion {
-        @include flex(column, center, center, null, null);
+        @include mixins.flex(column, center, center, null, null);
         margin: 0 auto;
         gap: 10px;
-    }
+    } 
 
     .carrito {  
         margin: 10px 0;        
@@ -34,7 +36,7 @@
     }
 
     .carrusel {
-        @include flex(null, center, null, wrap, center);
+        @include mixins.flex(null, center, null, wrap, center);
         img {
             display: flex;
             justify-content: center;
@@ -82,4 +84,4 @@
         justify-content: center;
     }
 
-}
+} 

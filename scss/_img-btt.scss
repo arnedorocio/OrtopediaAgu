@@ -1,5 +1,7 @@
+@use "mixins";
+
 .iconos{
-    @include flex(null, null, center, null);    
+    @include mixins.flex(null, null, center, null);    
     gap: 8px;  
 }
 
@@ -27,13 +29,15 @@
     display: flex;   
 }
 
+
 .imgProductos img {
     width: 100%;   
     height: 400px;
+    transition: 0.35s ease;
 }
 
 .imgProductos {
-    @include flex(row, center, null, wrap, null);
+    @include mixins.flex(row, center, null, wrap, null);
     margin-bottom: 50px;
 }
 
@@ -43,7 +47,7 @@
     font-size: 1.2rem;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: #d96a4d;
-    @include flex(null, center, center, null, null);
+    @include mixins.flex(null, center, center, null, null);
     margin-left: 180px;
     margin-bottom: 10px;
     border-radius: 10px;
@@ -101,7 +105,8 @@ article {
 }
 
 .carritoVacio {
-    @include flex(column, space-between, center, wrap, null);
+    @include mixins.flex(column, space-between, center, wrap, null);
     margin-top: 50px;
     justify-content:space-between;
 }
+
