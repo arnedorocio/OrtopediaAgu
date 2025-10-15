@@ -399,7 +399,7 @@ li {
     margin: 2.5px;
   }
   .carritoVacio {
-    margin-left: 40px;
+    margin-left: 0px;
   }
   .carritoVacio img {
     width: 25%;
