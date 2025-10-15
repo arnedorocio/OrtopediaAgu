@@ -151,6 +151,26 @@ a {
   margin-top: 10px;
 }
 
+@keyframes izquierda {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes derecha {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 .iconos {
   display: flex;
   align-items: center;
@@ -186,7 +206,11 @@ a {
 .imgProductos img {
   width: 100%;
   height: 400px;
-  transition: 0.35s ease;
+  transition: transform 0.3s ease;
+}
+
+.imgProductos img:hover {
+  transform: scale(1.1);
 }
 
 .imgProductos {
@@ -212,6 +236,12 @@ a {
   cursor: pointer;
   width: 200px;
   height: 50px;
+  transform: scale 1.1;
+}
+
+.comprar:hover {
+  transform: scale(1.1);
+  background-color: green;
 }
 
 article {
@@ -220,6 +250,20 @@ article {
   margin: 10px;
   width: 30%;
   background-color: white;
+}
+
+.articleProductos {
+  border: solid 3px rgb(101, 67, 33);
+  border-radius: 5px;
+  margin: 10px;
+  width: 30%;
+  background-color: white;
+}
+.articleProductos:nth-child(odd) {
+  animation: izquierda 2s ease forwards;
+}
+.articleProductos:nth-child(even) {
+  animation: derecha 2s ease forwards;
 }
 
 .inputFormulario {
