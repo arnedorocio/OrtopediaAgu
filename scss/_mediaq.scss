@@ -5,6 +5,10 @@
         @include mixins.flex(column, null, center, null, center);
     }
 
+    html, body {
+        overflow-x: hidden;
+    } 
+
     main {
         flex: 1;
         padding-bottom: 1rem;

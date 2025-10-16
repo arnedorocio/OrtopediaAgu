@@ -405,6 +405,9 @@ li {
     align-items: center;
     text-align: center;
   }
+  html, body {
+    overflow-x: hidden;
+  }
   main {
     flex: 1;
     padding-bottom: 1rem;
