@@ -5,6 +5,23 @@
         @include mixins.flex(column, null, center, null, center);
     }
 
+    main {
+        flex: 1;
+        padding-bottom: 1rem;
+    }
+
+    main h2 {
+        font-size: 1.5rem;
+    }
+
+    main h3 {
+        font-size: 1.2rem;
+    }
+
+    main p {
+        font-size: 1rem;
+    }
+
     #tituloPrincipal {
         font-size: 2.5rem;
     }
@@ -20,14 +37,18 @@
     }
 
     .imgProductos img {
-        width: 250px;
-        height: 250px;
-        margin: 30px;
+        width: 100%;
+        height: auto;
+        margin: 0px;
         justify-content: center;
     }
 
     .comprar {
         margin: 10px auto;
+        width: 80%;
+    }
+
+    .articleProductos {
         width: 80%;
     }
 

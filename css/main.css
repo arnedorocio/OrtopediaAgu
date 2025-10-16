@@ -192,9 +192,8 @@ a {
 }
 
 .sectionBannerPrincipal {
-  width: 100%;
+  width: 100vw;
   height: auto;
-  display: block;
 }
 
 .carrusel img {
@@ -338,8 +337,15 @@ header {
 }
 
 main {
-  margin-bottom: 0px;
   background-image: linear-gradient(to right, #654321, #f5f0e6, #654321);
+  flex: 1;
+  padding-bottom: 20px;
+}
+
+main h2,
+main h3,
+main p {
+  margin: 0;
 }
 
 footer {
@@ -399,6 +405,19 @@ li {
     align-items: center;
     text-align: center;
   }
+  main {
+    flex: 1;
+    padding-bottom: 1rem;
+  }
+  main h2 {
+    font-size: 1.5rem;
+  }
+  main h3 {
+    font-size: 1.2rem;
+  }
+  main p {
+    font-size: 1rem;
+  }
   #tituloPrincipal {
     font-size: 2.5rem;
   }
@@ -414,13 +433,16 @@ li {
     margin: 10px 0;
   }
   .imgProductos img {
-    width: 250px;
-    height: 250px;
-    margin: 30px;
+    width: 100%;
+    height: auto;
+    margin: 0px;
     justify-content: center;
   }
   .comprar {
     margin: 10px auto;
+    width: 80%;
+  }
+  .articleProductos {
     width: 80%;
   }
   article {

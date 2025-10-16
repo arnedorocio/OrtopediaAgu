@@ -27,8 +27,15 @@ header {
 }
 
 main {
-    margin-bottom: 0px;
     background-image: list.nth(variables.$colores-bg, 3);
+    flex: 1;
+    padding-bottom: 20px;
+}
+
+main h2,
+main h3,
+main p {
+    margin: 0;
 }
 
 footer { 
