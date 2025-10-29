@@ -1,13 +1,36 @@
 @use "mixins";
 
+@keyframes izquierda-responsive {
+  0% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes derecha-responsive {
+  0% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
 @include mixins.responsive(768px) {
     header {
         @include mixins.flex(column, null, center, null, center);
     }
 
-    html, body {
+    /*html, body {
         overflow-x: hidden;
-    } 
+    } */ 
 
     main {
         flex: 1;
@@ -54,6 +77,13 @@
 
     .articleProductos {
         width: 80%;
+        &:nth-child(odd) {
+            animation: izquierda-responsive 0s ease forwards;
+        }
+    
+        &:nth-child(even) {
+            animation: derecha-responsive 0s ease forwards;
+        }
     }
 
     article {

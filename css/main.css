@@ -410,6 +410,26 @@ li {
   margin-top: 20px;
 }
 
+@keyframes izquierda-responsive {
+  0% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes derecha-responsive {
+  0% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 @media (max-width: 768px) {
   header {
     display: flex;
@@ -417,9 +437,9 @@ li {
     align-items: center;
     text-align: center;
   }
-  html, body {
-    overflow-x: hidden;
-  }
+  /*html, body {
+      overflow-x: hidden;
+  } */
   main {
     flex: 1;
     padding-bottom: 1rem;
@@ -459,6 +479,12 @@ li {
   }
   .articleProductos {
     width: 80%;
+  }
+  .articleProductos:nth-child(odd) {
+    animation: izquierda-responsive 0s ease forwards;
+  }
+  .articleProductos:nth-child(even) {
+    animation: derecha-responsive 0s ease forwards;
   }
   article {
     width: 80%;

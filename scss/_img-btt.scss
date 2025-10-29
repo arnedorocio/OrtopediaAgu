@@ -22,7 +22,6 @@
   }
 }
 
-
 .iconos{
     @include mixins.flex(null, null, center, null);    
     gap: 8px;  
