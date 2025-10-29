@@ -24,7 +24,7 @@ header {
     "subtitulo carrito"
     ". barra";
     align-items: center;
-}
+} 
 
 main {
     background-image: list.nth(variables.$colores-bg, 3);
@@ -73,4 +73,13 @@ li {
 
 .formulario {
     @include mixins.flex(column,null,null,baseline,null);
+    background-color: rgb(255, 255, 255);
+    border-radius: 2%;
+}
+
+.inputFormulario {
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    margin-right: 20px;
+    margin-top: 20px;
 }

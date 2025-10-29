@@ -13,6 +13,7 @@
   font-weight: bold;
   text-transform: uppercase;
   font-size: 2rem;
+  padding-top: 10px;
   margin-bottom: 15px;
 }
 
@@ -106,6 +107,7 @@ a {
 .textoCasillero {
   color: #654321;
   margin-right: 10px;
+  margin-left: 10px;
 }
 
 .textoNosotros p {
@@ -130,6 +132,7 @@ a {
   font-weight: bold;
   font-size: 1.5rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 5px;
 }
 
 .carritoVacio p {
@@ -396,6 +399,15 @@ li {
   display: flex;
   flex-direction: column;
   flex-wrap: baseline;
+  background-color: rgb(255, 255, 255);
+  border-radius: 2%;
+}
+
+.inputFormulario {
+  background-color: rgb(255, 255, 255);
+  width: 200px;
+  margin-right: 20px;
+  margin-top: 20px;
 }
 
 @media (max-width: 768px) {
