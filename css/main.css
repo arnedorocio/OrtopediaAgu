@@ -410,6 +410,10 @@ li {
   margin-top: 20px;
 }
 
+.buscador {
+  justify-content: center;
+}
+
 @keyframes izquierda-responsive {
   0% {
     transform: translateX(0);
