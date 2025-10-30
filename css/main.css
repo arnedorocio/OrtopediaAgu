@@ -100,8 +100,20 @@ a {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bolder;
   font-size: 1rem;
+  text-align: left;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.seccionFormularioBoton {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  font-size: 1rem;
   text-align: center;
   padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .textoCasillero {
@@ -408,10 +420,6 @@ li {
   width: 200px;
   margin-right: 20px;
   margin-top: 20px;
-}
-
-.buscador {
-  justify-content: center;
 }
 
 @keyframes izquierda-responsive {
